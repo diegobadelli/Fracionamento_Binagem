@@ -61,9 +61,9 @@ function calcularFracionamento() {
 
         //console.log("Metragem final segunda bobina:", metragemFinal2);
         resultadoHTML = `Dados para Fracionamento: <br> <br>
-          Primeira bobina Fracionada: ${metragemFinal1} m <br>
-          Segunda bobina Fracionada: ${metragemFinal2} m <br>
-          Metragem da segunda bobina na máquina: ${metragemMaqBobina2} m`;
+          Primeira bobina Fracionada: ${metragemFinal1} m <br> <br>
+          Segunda bobina Fracionada: ${metragemFinal2} m <br> <br>
+          Metragem da segunda bobina na máquina: ${metragemMaqBobina2.toFixed(0)} m`;
     } else if (produtoEscolhido == "CAT6") {
         const metragensPrimeiraBobina = CAT6["Primeira Bobina"];
         const metragemFinal1 = encontrarMetragemMaisProxima(metragensPrimeiraBobina, metragemRealPrimeiraBobina);
@@ -74,9 +74,9 @@ function calcularFracionamento() {
 
         //console.log("Metragem final segunda bobina:", metragemFinal2);
         resultadoHTML = `Dados para Fracionamento: <br> <br>
-          Primeira bobina Fracionada: ${metragemFinal1} m <br>
-          Segunda bobina Fracionada: ${metragemFinal2} m <br>
-          Metragem da segunda bobina na máquina: ${metragemMaqBobina2} m`;
+          Primeira bobina Fracionada: ${metragemFinal1} m <br> <br>
+          Segunda bobina Fracionada: ${metragemFinal2} m <br> <br>
+          Metragem da segunda bobina na máquina: ${metragemMaqBobina2.toFixed(0)} m`;
     } else {
         const metragensPrimeiraBobina = SemFiller["Primeira Bobina"];
         const metragemFinal1 = encontrarMetragemMaisProxima(metragensPrimeiraBobina, metragemRealPrimeiraBobina);
@@ -87,9 +87,9 @@ function calcularFracionamento() {
 
         //console.log("Metragem final segunda bobina:", metragemFinal2);
         resultadoHTML = `Dados para Fracionamento: <br> <br>
-          Primeira bobina Fracionada: ${metragemFinal1} m <br>
-          Segunda bobina Fracionada: ${metragemFinal2} m <br>
-          Metragem da segunda bobina na máquina: ${metragemMaqBobina2} m`;
+          Primeira bobina Fracionada: ${metragemFinal1} m <br> <br>
+          Segunda bobina Fracionada: ${metragemFinal2} m <br> <br>
+          Metragem da segunda bobina na máquina: ${metragemMaqBobina2.toFixed(0)} m`;
     }
 
     // Limpa o conteúdo anterior
