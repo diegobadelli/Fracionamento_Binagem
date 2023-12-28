@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #747070;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #e3e4e6;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+    /* Remover os pontos de lista */
+    #lista-produtos {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+/* Remover as setas de incremento e decremento nos inputs tipo number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    margin: 10px;
+    padding: 7px;
+    width: 10%;
+    box-sizing: border-box;
+    -moz-appearance: textfield;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #007bb5;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#subtitulo {
+    margin-top: 40px;
+}
+
+/* Additional Styles for Innovative Design */
+
+/* Example: Add a subtle box shadow to inputs for a modern look */
+input {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Example: Rounded corners for a softer appearance */
+button, input {
+    border-radius: 4px;
+}
+
+/* Example: Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
