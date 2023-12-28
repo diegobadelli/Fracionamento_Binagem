@@ -57,7 +57,7 @@ function calcularFracionamento() {
 
         const metragensSegundaBobina = CAT5e["Segunda Bobina"];
         const metragemFinal2 = encontrarMetragemMaisProxima(metragensSegundaBobina, metragemRealSegundaBobina);
-        const metragemMaqBobina2 = metragemFinal2*metragemMaquina/metragemEtiqueta;
+        const metragemMaqBobina2 = metragemFinal2 * metragemMaquina / metragemEtiqueta;
 
         //console.log("Metragem final segunda bobina:", metragemFinal2);
         resultadoHTML = `Dados para Fracionamento: <br> <br>
@@ -70,7 +70,7 @@ function calcularFracionamento() {
 
         const metragensSegundaBobina = CAT6["Segunda Bobina"];
         const metragemFinal2 = encontrarMetragemMaisProxima(metragensSegundaBobina, metragemRealSegundaBobina);
-        const metragemMaqBobina2 = metragemFinal2*metragemMaquina/metragemEtiqueta;
+        const metragemMaqBobina2 = metragemFinal2 * metragemMaquina / metragemEtiqueta;
 
         //console.log("Metragem final segunda bobina:", metragemFinal2);
         resultadoHTML = `Dados para Fracionamento: <br> <br>
@@ -83,7 +83,7 @@ function calcularFracionamento() {
 
         const metragensSegundaBobina = SemFiller["Segunda Bobina"];
         const metragemFinal2 = encontrarMetragemMaisProxima(metragensSegundaBobina, metragemRealSegundaBobina);
-        const metragemMaqBobina2 = metragemFinal2*metragemMaquina/metragemEtiqueta;
+        const metragemMaqBobina2 = metragemFinal2 * metragemMaquina / metragemEtiqueta;
 
         //console.log("Metragem final segunda bobina:", metragemFinal2);
         resultadoHTML = `Dados para Fracionamento: <br> <br>
@@ -105,21 +105,15 @@ function calcularFracionamento() {
 // Dados
 const produtos = ["CAT5e", "CAT6", "Sem Filler"];
 
-function imprime(texto) {
-    document.getElementById('output').innerHTML += texto + "<br>";
+// Função para exibir lista de escolha do produto
+function exibirListaProdutos() {
+    const listaProdutos = document.getElementById('lista-produtos');
+    produtos.forEach((produto, index) => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<label><input type='radio' name='produto' value='${index + 1}'> ${produto}</label>`;
+        listaProdutos.appendChild(listItem);
+    });
 }
 
-// Exibindo lista de escolha do produto
-imprime("Escolha um produto:");
-imprime("<br>");
-
-for (let i = 0; i < produtos.length; i++) {
-    imprime(`<label><input type='radio' name='produto' value='${i + 1}'> ${i + 1} - ${produtos[i]}</label>`);
-}
-
-imprime("<br>");
-
-imprime(`<label>Qual é a metragem total padrão da tabela da máquina? <input type='number' id='metragemMaquina'></label>`);
-imprime(`<label>Qual é a metragem total da etiqueta do produto? <input type='number' id='metragemEtiqueta'></label>`);
-imprime(`<label>Qual é a metragem do fracionamento na máquina? <input type='number' id='metragemFracionamento'></label>`);
-imprime(`<button onclick='calcularFracionamento()'>Calcular</button>`);
+// Chama a função para exibir a lista de escolha do produto
+exibirListaProdutos();

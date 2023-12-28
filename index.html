@@ -12,9 +12,29 @@
     <div id="subtitulo">
         <h2>1º Cenário: Fracionamento de uma bobina em duas partes</h2>
     </div>
-    <div id="output"></div>
+    <div id="output">
+        <!-- Lista de escolha do produto -->
+        <label>Produto:</label>
+    
+        <!-- Usando uma lista não ordenada para melhor semântica -->
+        <ul id="lista-produtos"></ul>
 
-    <script src="script.js"></script>
+        <!-- Perguntas e inputs -->
+        <label for="metragemMaquina">Qual é a metragem total padrão da tabela da máquina?</label>
+        <input type="number" id="metragemMaquina">
+        <br>
+
+        <label for="metragemEtiqueta">Qual é a metragem total da etiqueta do produto?</label>
+        <input type="number" id="metragemEtiqueta">
+        <br>
+
+        <label for="metragemFracionamento">Qual é a metragem do fracionamento na máquina?</label>
+        <input type="number" id="metragemFracionamento">
+        <br>
+
+        <button onclick="calcularFracionamento()">Calcular</button>
+        <script src="script.js"></script>
+    </div>
 
     <div id="subtitulo">
         <h2>2º Cenário: Bobinas fracionadas no isolamento</h2>
