@@ -1,23 +1,23 @@
 body {
-    font-family: 'Roboto', 'Arial', sans-serif;
-    background-color: #f8f8f8;
+    font-family: 'Lato', sans-serif;
+    background-color: #cccaca;
     color: #747070;
     margin: 20px;
     line-height: 1.6;
 }
 
 h1 {
-    color: #e3e4e6;
+    color: #333;
     text-align: center;
     border-radius: 10px;
-    background-color: #333;
+    background-color: #afaaaa;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    font-size: 16px;
-    color: #555;
+    font-size: 15px;
+    color: #666;
 }
 
     /* Remover os pontos de lista */
@@ -66,8 +66,39 @@ button:hover {
     border-radius: 10px;
 }
 
+/* Modern table styling */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.modern-table td, .modern-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.modern-table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.modern-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.modern-table tr:hover {
+    background-color: #ddd;
+}
+
+.observacao {
+    color: #B90504;
+}
+
 #subtitulo {
-    margin-top: 40px;
+    color: #B90504;
+    font-size: 16px;
 }
 
 /* Additional Styles for Innovative Design */

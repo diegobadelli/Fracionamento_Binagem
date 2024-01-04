@@ -60,10 +60,23 @@ function calcularFracionamento() {
         const metragemMaqBobina2 = metragemFinal2 * metragemMaquina / metragemEtiqueta;
 
         //console.log("Metragem final segunda bobina:", metragemFinal2);
-        resultadoHTML = `Dados para Fracionamento: <br> <br>
-          Primeira bobina Fracionada: ${metragemFinal1} m <br> <br>
-          Segunda bobina Fracionada: ${metragemFinal2} m <br> <br>
-          Metragem da segunda bobina na máquina: ${metragemMaqBobina2.toFixed(0)} m`;
+        resultadoHTML = `<h3>Dados para Fracionamento:</h3>
+        <table class="modern-table">
+            <tr>
+                <td>Primeira bobina Fracionada:</td>
+                <td>${metragemFinal1} m</td>
+            </tr>
+            <tr>
+                <td>Segunda bobina Fracionada:</td>
+                <td>${metragemFinal2} m</td>
+            </tr>
+            <tr>
+                <td>Metragem da segunda bobina na máquina:</td>
+                <td>${metragemMaqBobina2.toFixed(0)} m</td>
+            </tr>
+        </table>
+        <p class="observacao">Se possível, avaliando a sobra na bobina de isolamento, aumentar 305 m na metragem da segunda bobina.</p>
+    `;
     } else if (produtoEscolhido == "CAT6") {
         const metragensPrimeiraBobina = CAT6["Primeira Bobina"];
         const metragemFinal1 = encontrarMetragemMaisProxima(metragensPrimeiraBobina, metragemRealPrimeiraBobina);
@@ -73,10 +86,23 @@ function calcularFracionamento() {
         const metragemMaqBobina2 = metragemFinal2 * metragemMaquina / metragemEtiqueta;
 
         //console.log("Metragem final segunda bobina:", metragemFinal2);
-        resultadoHTML = `Dados para Fracionamento: <br> <br>
-          Primeira bobina Fracionada: ${metragemFinal1} m <br> <br>
-          Segunda bobina Fracionada: ${metragemFinal2} m <br> <br>
-          Metragem da segunda bobina na máquina: ${metragemMaqBobina2.toFixed(0)} m`;
+        resultadoHTML = `<h3>Dados para Fracionamento:</h3>
+        <table class="modern-table">
+            <tr>
+                <td>Primeira bobina Fracionada:</td>
+                <td>${metragemFinal1} m</td>
+            </tr>
+            <tr>
+                <td>Segunda bobina Fracionada:</td>
+                <td>${metragemFinal2} m</td>
+            </tr>
+            <tr>
+                <td>Metragem da segunda bobina na máquina:</td>
+                <td>${metragemMaqBobina2.toFixed(0)} m</td>
+            </tr>
+        </table>
+        <p class="observacao">Se possível, avaliando a sobra na bobina de isolamento, aumentar 305 m na metragem da segunda bobina.</p>
+    `;
     } else {
         const metragensPrimeiraBobina = SemFiller["Primeira Bobina"];
         const metragemFinal1 = encontrarMetragemMaisProxima(metragensPrimeiraBobina, metragemRealPrimeiraBobina);
@@ -86,10 +112,23 @@ function calcularFracionamento() {
         const metragemMaqBobina2 = metragemFinal2 * metragemMaquina / metragemEtiqueta;
 
         //console.log("Metragem final segunda bobina:", metragemFinal2);
-        resultadoHTML = `Dados para Fracionamento: <br> <br>
-          Primeira bobina Fracionada: ${metragemFinal1} m <br> <br>
-          Segunda bobina Fracionada: ${metragemFinal2} m <br> <br>
-          Metragem da segunda bobina na máquina: ${metragemMaqBobina2.toFixed(0)} m`;
+        resultadoHTML = `<h3>Dados para Fracionamento:</h3>
+        <table class="modern-table">
+            <tr>
+                <td>Primeira bobina Fracionada:</td>
+                <td>${metragemFinal1} m</td>
+            </tr>
+            <tr>
+                <td>Segunda bobina Fracionada:</td>
+                <td>${metragemFinal2} m</td>
+            </tr>
+            <tr>
+                <td>Metragem da segunda bobina na máquina:</td>
+                <td>${metragemMaqBobina2.toFixed(0)} m</td>
+            </tr>
+        </table>
+        <p class="observacao">Se possível, avaliando a sobra na bobina de isolamento, aumentar 305 m na metragem da segunda bobina.</p>
+    `;
     }
 
     // Limpa o conteúdo anterior

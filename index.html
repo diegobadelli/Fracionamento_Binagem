@@ -9,26 +9,28 @@
 <body>
 
     <h1>Cálculo de fracionamento no processo de Binagem</h1>
-    <div id="subtitulo">
-        <h2>1º Cenário: Fracionamento de uma bobina em duas partes</h2>
-    </div>
+
     <div id="output">
+        <div id="subtitulo">
+            <h2>Passos para o fracionamento de uma bobina em duas partes</h2>
+        </div>
         <!-- Lista de escolha do produto -->
-        <label>Produto:</label>
-    
+        <label>1º) Escolha o produto:</label>
+
         <!-- Usando uma lista não ordenada para melhor semântica -->
-        <ul id="lista-produtos"></ul>
+        <ul id="lista-produtos"></ul> <br>
+    
 
         <!-- Perguntas e inputs -->
-        <label for="metragemMaquina">Qual é a metragem total padrão da tabela da máquina?</label>
+        <label for="metragemMaquina">2º) Digite a metragem total padrão da tabela da máquina?</label>
         <input type="number" id="metragemMaquina">
         <br>
 
-        <label for="metragemEtiqueta">Qual é a metragem total da etiqueta do produto?</label>
+        <label for="metragemEtiqueta">3º) Digite a metragem total da etiqueta do produto?</label>
         <input type="number" id="metragemEtiqueta">
         <br>
 
-        <label for="metragemFracionamento">Qual é a metragem do fracionamento na máquina?</label>
+        <label for="metragemFracionamento">4º) Digite a metragem do rompimento/fracionamento na máquina?</label>
         <input type="number" id="metragemFracionamento">
         <br>
 
@@ -36,9 +38,9 @@
         <script src="script.js"></script>
     </div>
 
-    <div id="subtitulo">
+    <!--<div id="subtitulo">
         <h2>2º Cenário: Bobinas fracionadas no isolamento</h2>
-    </div>
+   </div> -->
 
 </body>
 
