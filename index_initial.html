@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cálculo de fracionamento no processo de Binagem</title>
+    <link rel="stylesheet" type="text/css" href="initial_styles.css">
+</head>
+
+<body>
+
+    <h1>Cálculo de fracionamento no processo de Binagem</h1>
+
+    <div id="output">
+        <div id="subtitulo">
+            <h2>Procedimento para bobinas fracionadas no processo de Binagem</h2>
+        </div>
+        <!-- Lista de escolha do produto -->
+        <label>1º) Escolha o produto:</label>
+
+        <!-- Usando uma lista não ordenada para melhor semântica -->
+        <ul id="lista-produtos"></ul> <br>
+
+
+        <!-- Perguntas e inputs -->
+        <label for="metragemMaquina">2º) Digite a metragem total padrão da tabela da máquina?</label>
+        <input type="number" id="metragemMaquina">
+        <br>
+
+        <label for="metragemEtiqueta">3º) Digite a metragem total da etiqueta do produto?</label>
+        <input type="number" id="metragemEtiqueta">
+        <br>
+
+        <label for="metragemFracionamento">4º) Digite a metragem do rompimento/fracionamento na máquina?</label>
+        <input type="number" id="metragemFracionamento">
+        <br>
+
+        <button id="calcularButton" onclick="calcularFracionamento()">Calcular</button>
+        <button class="inicio-button" onclick="redirectToActualIndex()">Início</button>
+        <script src="initial_script.js"></script>
+    </div>
+
+</body>
+
+</html>

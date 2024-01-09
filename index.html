@@ -2,45 +2,22 @@
 <html>
 
 <head>
-    <title>Cálculo de fracionamento no processo de Binagem</title>
+    <title>Initial Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
 
-    <h1>Cálculo de fracionamento no processo de Binagem</h1>
-
-    <div id="output">
-        <div id="subtitulo">
-            <h2>Passos para o fracionamento de uma bobina em duas partes</h2>
+    <div id="container">
+        <h1>Bem-vindo a Calculadora de Fracionamento!</h1>
+        <h3>Escolha uma das opções:</h3>
+        <div id="buttons-container">
+            <button onclick="redirectToOtherPage()">Bobina fracionada no Isolamento</button>
+            <button onclick="redirectToActualIndex()">Bobina fracionada na Binagem</button>
         </div>
-        <!-- Lista de escolha do produto -->
-        <label>1º) Escolha o produto:</label>
-
-        <!-- Usando uma lista não ordenada para melhor semântica -->
-        <ul id="lista-produtos"></ul> <br>
-    
-
-        <!-- Perguntas e inputs -->
-        <label for="metragemMaquina">2º) Digite a metragem total padrão da tabela da máquina?</label>
-        <input type="number" id="metragemMaquina">
-        <br>
-
-        <label for="metragemEtiqueta">3º) Digite a metragem total da etiqueta do produto?</label>
-        <input type="number" id="metragemEtiqueta">
-        <br>
-
-        <label for="metragemFracionamento">4º) Digite a metragem do rompimento/fracionamento na máquina?</label>
-        <input type="number" id="metragemFracionamento">
-        <br>
-
-        <button onclick="calcularFracionamento()">Calcular</button>
-        <script src="script.js"></script>
     </div>
 
-    <!--<div id="subtitulo">
-        <h2>2º Cenário: Bobinas fracionadas no isolamento</h2>
-   </div> -->
+    <script src="script.js"></script>
 
 </body>
 
